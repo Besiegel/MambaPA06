@@ -21,9 +21,9 @@ def hangman_game():
     while len(word_letters) > 0:
         # turns each iterated letter into a string
 
-        print('you have used:', join(used_letters), 'and have', turns, 'number of lives')
-        word_list= [letter if letter in used_letters else '?' for letter in word]
-        print('current word:', join(word_list))
+        print('you have used:', .join(used_letters), 'and have', turns, 'number of lives')
+        word_list = [letter if letter in used_letters else '?' for letter in word]
+        print('current word:', .join(word_list))
         user_letter = input('guess a letter').upper()
         if word_letters in AtoZ:
             if word_letters not in used_letters:
